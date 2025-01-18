@@ -3,6 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
+import { JobsModule } from './modules/jobs/jobs.module';
 
 @Module({
   imports: [
@@ -21,6 +22,7 @@ import { ThrottlerModule } from '@nestjs/throttler';
         ],
       }),
     }),
+    JobsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

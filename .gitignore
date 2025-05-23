@@ -53,6 +53,7 @@ yarn.lock
 # temp directory
 .temp
 .tmp
+temp
 
 # Runtime data
 pids
